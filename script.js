@@ -167,6 +167,7 @@ function gradeAnswer(answer, keywords, maxMarks) {
 
 function displayQuestion() {
     if (currentQuestionIndex < selectedQuestions.length) {
+	answerElem.focus();
         const currentQuestion = selectedQuestions[currentQuestionIndex];
         questionElem.innerText = currentQuestion.Question;
         maxMarksElem.innerText = `Max Marks: ${currentQuestion.MaxMarks}`;
