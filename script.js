@@ -7,7 +7,7 @@ const maxTotalMarks = 20;
 const answers = [];
 const currentDate = new Date().toLocaleDateString('en-GB').replace(/\//g, '-');
 let studentList = [];
-const examDuration = 5 * 60 * 1000; // 5 minutes in milliseconds
+const examDuration = 10 * 60 * 1000; // 5 minutes in milliseconds
 let timerInterval;
 let timeRemaining = examDuration;
 
@@ -254,7 +254,7 @@ function resetState() {
     document.getElementById('student-selection').value = '';
     fileInput.value = '';
     clearInterval(timerInterval); // Clear timer
-    timerElem.innerText = 'Time Remaining: 05:00'; // Reset timer display
+    timerElem.innerText = 'Time Remaining: 10:00'; // Reset timer display
     timeRemaining = examDuration; // Reset time remaining
 }
 
